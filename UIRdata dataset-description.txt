@@ -1,0 +1,21 @@
+This dataset consists of 16 facebook-twitter seed user pairs and their ego networks (aka second neighborhoods, all vertices with distance at most 2 etc), 
+each organized in a separate folder.
+
+
+Each folder contains the next set of files:
+	
+* fb.txt - undirected facebook friendship graph, each line represents an edge connecting two profiles specifyied by numbers. 
+Numbers are counting from 0 and 0 is the number of seed user's profile.
+	
+* tw.txt - the same for twitter graph (remember that we removed all non-mutual connections from the graph)
+	
+* right.txt - pairs of twitter and facebook profiles that belong to the same real person
+	
+* unary-features.csv - fuzzy string comparisons between profile attributes (see the paper for details) computed for all profile pairs. 
+First two attrbutes in the file are for twitter and facebook profile numbers, the last one denotes is this particular pair a profile match (mentioned in right.txt) 
+and could be either "true" or "false". "?" means that in at least one profile in the pair this attribute is missing
+	
+* tw-tw.txt, fb-fb.txt - binary energies computed for facebook and twitter graphs
+
+
+This data is enough to reproduce the results of our paper, but we hope that it will help also in further UIR research.
