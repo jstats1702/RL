@@ -1,5 +1,3 @@
 # RL
 
-Code for "A Bayesian Approach for De-duplication in the Presence of Relational Data"
-
-In this paper we introduce a novel Bayesian approach for linking multiple social networks in order to discover the same real world person having different accounts across networks.  In particular, we develop a latent model that allow us to jointly characterize the network and linkage structures relying in both relational and profile data.  In contrast to other existing approaches in the machine learning literature, our Bayesian implementation naturally provides uncertainty quantification via posterior probabilities for the linkage structure itself or any function of it.  Our findings clearly suggest that our methodology can produce accurate point estimates of the linkage structure even in the absence of profile information, and also, in an identity resolution setting, our results confirm that including relational data into the matching process improves the linkage accuracy.  We illustrate our methodology using real data from popular social networks such as \texttt{Twitter}, \texttt{Facebook}, and \texttt{YouTube}.
+Data for "A Bayesian Approach for De-duplication in the Presence of Relational Data"
